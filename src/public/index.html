@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>AI Code Explainer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>🤖 AI Code Explainer</h1>
+
+            <p>
+
+                Paste one or more code snippets and receive an AI-generated
+                explanation with key code insights.
+
+            </p>
+
+        </header>
+
+        <!-- Editor -->
+
+        <div class="editor-card">
+
+            <div class="editor-header">
+
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+
+                <span class="editor-title">
+
+                    Paste your source code
+
+                </span>
+
+            </div>
+
+            <textarea
+
+                id="code"
+
+                spellcheck="false"
+
+                placeholder="Paste one or multiple code snippets here..."
+
+            ></textarea>
+
+        </div>
+
+        <button id="explainBtn">
+
+            🚀 Explain Code
+
+        </button>
+
+        <!-- Current Analysis -->
+
+        <section id="analysisSection">
+
+            <div class="section-header">
+
+                <h2>
+
+                    ✨ Current Analysis
+
+                </h2>
+
+                <button id="copyExplanation">
+
+                    📋 Copy Explanation
+
+                </button>
+
+            </div>
+
+            <div id="output">
+
+                <div class="result-card">
+
+                    <h2>
+
+                        Welcome 👋
+
+                    </h2>
+
+                    <p>
+
+                        Paste one or multiple code snippets.
+
+                        <br><br>
+
+                        The application will:
+
+                        <br><br>
+
+                        ✔ Detect individual snippets
+
+                        <br>
+
+                        ✔ Extract important functions
+
+                        <br>
+
+                        ✔ Detect inputs and outputs
+
+                        <br>
+
+                        ✔ Identify loops and conditions
+
+                        <br>
+
+                        ✔ Explain time & space complexity
+
+                        <br>
+
+                        ✔ Generate a concise AI explanation
+
+                        <br>
+
+                        ✔ Save every analysis below
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <!-- Previous Analyses -->
+
+        <section id="historySection">
+
+            <div class="history-header">
+
+                <div>
+
+                    <h2>
+
+                        📚 Previous Analyses
+
+                    </h2>
+
+                    <small>
+
+                        Total Analyses:
+
+                        <span id="snippetCount">
+
+                            0
+
+                        </span>
+
+                    </small>
+
+                </div>
+
+                <button id="clearHistory">
+
+                    🗑 Clear History
+
+                </button>
+
+            </div>
+
+            <div id="historyContainer">
+
+                <div class="history-empty">
+
+                    No analyses yet.
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
